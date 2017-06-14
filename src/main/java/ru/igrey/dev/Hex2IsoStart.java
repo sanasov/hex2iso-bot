@@ -4,6 +4,7 @@ package ru.igrey.dev;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
+import ru.igrey.dev.service.MoasHex2IsoService;
 
 /**
  * Created by sanasov on 01.04.2017.

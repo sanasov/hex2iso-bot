@@ -1,4 +1,4 @@
-package ru.igrey.dev;
+package ru.igrey.dev.service;
 
 /**
  * Created by sanasov on 14.06.2017.
