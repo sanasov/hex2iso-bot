@@ -26,6 +26,10 @@ public class Hex2Iso extends TelegramLongPollingBot {
     public void onUpdateReceived(Update update) {
         if (update.hasMessage()) {
             Message message = update.getMessage();
+            if (message.getText().equals("/start")){
+                sendTextMessage(message.getChatId(), "Hi! You can send hex with or without header and received parsed iso message.");
+                return;
+            }
             String isoMessage = hex2IsoService.parse(message.getText());
             sendTextMessage(message.getChatId(), isoMessage);
         }

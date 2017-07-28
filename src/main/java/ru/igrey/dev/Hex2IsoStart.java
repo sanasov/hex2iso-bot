@@ -17,6 +17,7 @@ public class Hex2IsoStart {
 
         TelegramBotsApi botsApi = new TelegramBotsApi();
 
+
         try {
             botsApi.registerBot(createHex2IsoBot());
         } catch (TelegramApiException e) {
